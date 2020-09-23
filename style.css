@@ -1,18 +1,74 @@
+html, body {
+  box-sizing: border-box;
+  font-family: "Pocket Monk";
+}
+
 table {
-  background-color: indianred;
+  background-color: black;
 }
 
 th, td {
+  box-sizing: border-box;
   text-align: center;
   border: 1px solid black;
   padding: 0.5rem 1rem;
-  background-color: white;
+  background-color: skyblue;
+  min-width: 150px;
+}
+
+.wrapper {
+  background-color: red;
+  margin: 0;
+  padding: 2rem 4rem; 
 }
 
 #pokemon-info {
+  font-family: "Pokemon GB";
   display: flex;
   justify-content: space-between;
+}
 
+.info-border {
+  position: relative;
+  background-color: lightgrey;
+  margin-top: 25px;
+  border-radius: 25px 25px 25px 100px;
+}
+
+section {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 25px 25px 75px 25px;
+  /* min-width: 512px; */
+  /* background-image: url(./assets/PokemonBackground.jpeg); */
+  /* background-size: cover; */
+  background-color: rgb(50, 50, 50);
+  border-radius: 30px 15px;
+}
+
+.dot {
+  position: absolute;
+  background-color: red;
+  height: 10px;
+  width: 10px;
+  bottom: 40px;
+  border-radius: 100%;
+}
+
+#left-dot {
+  left: 100px
+}
+
+#right-dot {
+  left: 250px;
+}
+
+#top-bar {
+  left: 150px;
+  bottom: 382px;
+  width: 50px;
+  border-radius: 5px;
 }
 
 #pokedex {
@@ -24,21 +80,34 @@ th, td {
 
 #pokedex-entry {
   display: block;
-  width: 100%;
-  height: 5rem;
-  background-color: indianred;
+  line-height: 1.25rem;
+  /* width: 100%; */
+  margin: 15px;
+  height: 6.25rem;
+  min-width: 400px;
+  background-color: rgb(50, 50, 50);
+  color: green;
+  font: monospace;
+  padding: 0.5rem 1.5rem 0;
+  border-radius: 15px;
 }
 
-section {
-  position: relative;
-  height: 374px;
-  width: 512px;
-  min-width: 512px;
-  background-image: url(./assets/PokemonBackground.jpeg);
-  background-size: cover;
+#flavor-border {
+  border-radius: 15px 20px;
+  min-width: 475px;
 }
 
 img {
   position: relative;
-  top: 25px;
+  /* top: 25px; */
+}
+
+@font-face {
+  font-family: "Pokemon GB";
+  src: url(./assets/Pokemon_GB.ttf)
+}
+
+@font-face {
+  font-family: "Pocket Monk";
+  src: url(./assets/Pocket_Monk.otf)
 }

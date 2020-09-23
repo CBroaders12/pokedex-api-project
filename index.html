@@ -9,49 +9,56 @@
 </head>
 
 <body>
-  <h1>Pokemon API Project</h1>
-  <p>Choose a Pokemon</p>
+  <div class="wrapper">
+    <h1>Generation 1 Pokedex</h1>
+    <p>Choose a Pokemon</p>
 
-  <select name="pokemon" id="selection">
-    <!-- Pokemon imported here -->
-  </select>
+    <select name="pokemon" id="selection">
+      <option></option>
+      <!-- Pokemon imported here -->
+    </select>
 
-  <div id='pokemon-info'>
-    <section>
-      <!-- This is where the sprite images go -->
-    </section>
+    <div id='pokemon-info'>
+      <div class="info-border">
+        <section>
+          <!-- This is where the sprite images go -->
+        </section>
+        <div class="dot" id="top-bar"></div>
+        <div class="dot" id="left-dot"></div>
+        <div class="dot" id="right-dot"></div>
+      </div>
 
-    <div id="pokedex">
-      <h2>Base Stats</h2>
-      <table>
-        <tr>
-          <th>HP</th>
-          <th>Atack</th>
-          <th>Defense</th>
-        </tr>
-        <tr>
-          <td id="hp">---</td>
-          <td id="attack">---</td>
-          <td id="defense">---</td>
-        </tr>
-        <tr>
-          <th>Spec. Attack</th>
-          <th>Spec. Defense</th>
-          <th>Speed</th>
-        </tr>
-        <tr>
-          <td id="spec-attack">---</td>
-          <td id="spec-defense">---</td>
-          <td id="speed">---</td>
-        </tr>
-      </table>
+      <div id="pokedex">
+        <table>
+          <tr>
+            <th>HP</th>
+            <th>Atack</th>
+            <th>Defense</th>
+          </tr>
+          <tr>
+            <td id="hp">-</td>
+            <td id="attack">-</td>
+            <td id="defense">-</td>
+          </tr>
+          <tr>
+            <th>Spec. Attack</th>
+            <th>Spec. Defense</th>
+            <th>Speed</th>
+          </tr>
+          <tr>
+            <td id="spec-attack">-</td>
+            <td id="spec-defense">-</td>
+            <td id="speed">-</td>
+          </tr>
+        </table>
 
-      <h2>Pokedex Entry</h2>
-      <p id="pokedex-entry">
-        <!-- Flavor text from pokedex goes here -->
-      </p>
+        <div class="info-border" id="flavor-border">
+          <p id="pokedex-entry">
+            <!-- Flavor text from pokedex goes here -->
+          </p>
+        </div>
+      </div>
     </div>
-
   </div>
 
 
