@@ -66,6 +66,7 @@ function displayImage(json) {
   img.src = json.sprites.front_default;
   img.width = '300';
 
+  section.style.background = '#606060';
   section.appendChild(img);
 }
 
@@ -94,5 +95,6 @@ function fetchFlavorText(json) {
     .then(json => {
       let flavorText = json.flavor_text_entries[0].flavor_text;
       pokedex.textContent = flavorText;
+      pokedex.style.background = '#606060';
     })
 }
