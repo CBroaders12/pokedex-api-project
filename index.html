@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Pokemon API Project</title>
+</head>
+
+<body>
+  <h1>Pokemon API Project</h1>
+  <p>Choose a Pokemon</p>
+
+  <select name="pokemon" id="selection">
+    <!-- Pokemon imported here -->
+  </select>
+
+  <div id='pokemon-info'>
+    <section>
+      <!-- This is where the sprite images go -->
+    </section>
+
+    <div id="pokedex">
+      <h2>Base Stats</h2>
+      <table>
+        <tr>
+          <th>HP</th>
+          <th>Atack</th>
+          <th>Defense</th>
+        </tr>
+        <tr>
+          <td id="hp">---</td>
+          <td id="attack">---</td>
+          <td id="defense">---</td>
+        </tr>
+        <tr>
+          <th>Spec. Attack</th>
+          <th>Spec. Defense</th>
+          <th>Speed</th>
+        </tr>
+        <tr>
+          <td id="spec-attack">---</td>
+          <td id="spec-defense">---</td>
+          <td id="speed">---</td>
+        </tr>
+      </table>
+
+      <h2>Pokedex Entry</h2>
+      <p id="pokedex-entry">
+        <!-- Flavor text from pokedex goes here -->
+      </p>
+    </div>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
