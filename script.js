@@ -40,7 +40,7 @@ function makeDropDown(json) {
 }
 
 function fetchInfo(e) {
-  e.preventDefault();
+  // e.preventDefault();
   let pokemon = select.value;
 
   url = `${baseURL}${pokemon}/`;
