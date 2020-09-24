@@ -14,14 +14,14 @@
     <p>Choose a Pokemon</p>
 
     <select name="pokemon" id="selection">
-      <option></option>
+      <option value="null"> -- Choose a Pokemon -- </option>
       <!-- Pokemon imported here -->
     </select>
 
     <div id='pokemon-info'>
       <div class="info-border">
         <section>
-          <!-- This is where the sprite images go -->
+          <!-- Sprite images imported here -->
         </section>
         <div class="dot" id="top-bar"></div>
         <div class="dot" id="left-dot"></div>
@@ -32,13 +32,19 @@
         <table>
           <tr>
             <th>HP</th>
-            <th>Atack</th>
+            <th>Attack</th>
             <th>Defense</th>
           </tr>
           <tr>
-            <td id="hp">-</td>
-            <td id="attack">-</td>
-            <td id="defense">-</td>
+            <td id="hp">-
+              <!-- Base HP Stat -->
+            </td>
+            <td id="attack">-
+              <!-- Base Attack Stat -->
+            </td>
+            <td id="defense">-
+              <!-- Base Defense Stat -->
+            </td>
           </tr>
           <tr>
             <th>Spec. Attack</th>
@@ -46,15 +52,21 @@
             <th>Speed</th>
           </tr>
           <tr>
-            <td id="spec-attack">-</td>
-            <td id="spec-defense">-</td>
-            <td id="speed">-</td>
+            <td id="spec-attack">-
+              <!-- Base Spec. Attack Stat -->
+            </td>
+            <td id="spec-defense">-
+              <!-- Base Spec. Defense Stat -->
+            </td>
+            <td id="speed">-
+              <!-- Base Speed Stat -->
+            </td>
           </tr>
         </table>
 
         <div class="info-border" id="flavor-border">
           <p id="pokedex-entry">
-            <!-- Flavor text from pokedex goes here -->
+            <!-- Flavor text from pokedex imported here -->
           </p>
         </div>
       </div>

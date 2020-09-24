@@ -1,11 +1,11 @@
 let baseURL = 'https://pokeapi.co/api/v2/pokemon/';
-let limit = '?limit=151'
+let limit = '?limit=151';
 let select = document.querySelector('select');
 let section = document.querySelector('section');
 let pokedex = document.getElementById('pokedex-entry');
 let url;
 
-let flavorURL = 'https://pokeapi.co/api/v2/pokemon-species/'
+let flavorURL = 'https://pokeapi.co/api/v2/pokemon-species/';
 
 // Initialize and assign stat cells
 let hp = document.getElementById('hp');
@@ -16,7 +16,7 @@ let specDefense = document.getElementById('spec-defense');
 let speed = document.getElementById('speed');
 
 //Add event listeners for dropdown selection
-let selectDropDown = document.addEventListener('change', fetchInfo)
+let selectDropDown = document.addEventListener('change', fetchInfo);
 
 //Fetch list of Pokemon and populate a dropdown list
 fetch(baseURL + limit)
@@ -25,7 +25,7 @@ fetch(baseURL + limit)
   })
   .then(json => {
     makeDropDown(json);
-  })
+  });
 
 function makeDropDown(json) {
   for (let i = 0; i < json.results.length; i++) {
@@ -33,7 +33,7 @@ function makeDropDown(json) {
     let option = document.createElement('option');
 
     option.value = name;
-    option.innerHTML = `<span> ${i + 1} - ${name} </span>`;
+    option.innerHTML = `<span> ${name} - ${i + 1} </span>`;
 
     select.appendChild(option);
   }
