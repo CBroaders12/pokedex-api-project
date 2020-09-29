@@ -64,6 +64,7 @@ function displayImage(json) {
 
   let img = document.createElement('img');
   img.src = json.sprites.front_default;
+  img.alt = select.value;
   img.width = '300';
 
   section.style.background = '#606060';
