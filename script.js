@@ -1,11 +1,11 @@
 let baseURL = 'https://pokeapi.co/api/v2/pokemon/';
-let limit = '?limit=151';
+let limit = '?limit=151'; // Include only original 151 Generation 1 Pokemon
+let flavorURL = 'https://pokeapi.co/api/v2/pokemon-species/';
 let select = document.querySelector('select');
 let section = document.querySelector('section');
 let pokedex = document.getElementById('pokedex-entry');
 let url;
 
-let flavorURL = 'https://pokeapi.co/api/v2/pokemon-species/';
 
 // Initialize and assign stat cells
 let hp = document.getElementById('hp');
@@ -57,7 +57,7 @@ function fetchInfo(e) {
 }
 
 function displayImage(json) {
-  console.log(json);
+  // console.log(json);
   while (section.firstChild) {
     section.removeChild(section.firstChild);
   }
@@ -93,7 +93,8 @@ function fetchFlavorText(json) {
       return results.json();
     })
     .then(json => {
-      let flavorText = json.flavor_text_entries[0].flavor_text;
+      console.log(json.flavor_text_entries);
+      let flavorText = json.flavor_text_entries[1].flavor_text;
       pokedex.textContent = flavorText;
       pokedex.style.background = '#606060';
     })

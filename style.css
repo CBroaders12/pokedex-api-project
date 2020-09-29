@@ -73,6 +73,7 @@ select {
   position: relative;
   background-color: lightgrey;
   margin-top: 25px;
+  border: inset black 5px;
   border-radius: 25px 25px 25px 100px;
 }
 
@@ -111,7 +112,7 @@ section {
   bottom: 382px;
 }
 
-#top-bar {
+#bottom-dot {
   left: 50px;
   bottom: 30px;
   width: 25px;
